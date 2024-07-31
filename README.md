@@ -31,3 +31,11 @@
 `password`
 
 
+## Wordlist
+`/usr/share/wordlists/metasploit]`
+
+`/usr/share/wordlists/john.lst`
+
+`/usr/share/wordlists`
+
+
