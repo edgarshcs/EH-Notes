@@ -41,6 +41,10 @@ Listar equipos con SNMP
 
 `sudo nmap -sU -p 161 --script=snmp-info 192.168.100.0/24`
 
+Informacion SNMP
+
+`snmp-check IP-SNMP`
+
 Procesos SNMP
 
 `nmap -sU -p 161 --script=snmp-processes IP`
@@ -62,6 +66,28 @@ String validos SNMP con metasploit
 `SET RHOST IP-SNMP`
 
 `run`
+
+
+### SMB
+
+#### Enumeracion
+
+`nmap -p445 IP`
+
+Enumerar carpetas compartidas
+
+`nmap -p445 --script smb-enum-shares IP`
+
+Enumerar usuarios
+
+`nmap -p445 --script smb-enum-users IP`
+
+`nmap -p445 --script smb-enum-users --script-args smbusername=administrator,smbpassword=password IP`
+
+#### Acceder a traves de interfaz grafica
+
+`smb://IP`
+
 
 
 ## Wordlist
