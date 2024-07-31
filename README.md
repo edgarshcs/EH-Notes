@@ -35,6 +35,35 @@
 
 `get file.txt`
 
+### SNMP
+
+Listar equipos con SNMP
+
+`sudo nmap -sU -p 161 --script=snmp-info 192.168.100.0/24`
+
+Procesos SNMP
+
+`nmap -sU -p 161 --script=snmp-processes IP`
+
+Interfaces SNMP
+
+`nmap -sU -p 161 --script=snmp-interfaces IP`
+
+String validos SNMP con metasploit
+
+`msfdb init`
+
+`msfconsole`
+
+`search snmp`
+
+`use auxiliary/scanner/snmp/snmp_login`
+
+`SET RHOST IP-SNMP`
+
+`run`
+
+
 ## Wordlist
 `/usr/share/wordlists/metasploit]`
 
