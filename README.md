@@ -208,4 +208,54 @@ Maquina que recibe
 `./covert_tcp -source 10.12.0.15 -source_port 8888 -server -file receive.txt`
 
 
+## Cryptography / Criptografía
+
+### Hashmyfiles
+
+Calcular hashes
+
+`Abrir la aplicación >> Arrastrar los archivos que quiere calcular a la aplicacion`
+
+### Cryptool
+
+Encrpitar archivos
+
+`Abrir aplicacion >>`
+
+Descifrar archivos
+
+`Abrir aplicacion >> Analysis >> Symmetric (Clasic / Modern) >> Escoger cifrado `
+
+### BcTextEncoder
+
+Encoding Data to Hex Format
+
+Ejecutar aplicacion
+
+`Colocar texto plano >> Encode >> Colocar Password `
+
+Decode
+
+`Colocar texto cifrado >> Decode >> Colocra clave`
+
+### CrytoForge
+
+Encriptar archivos
+
+`Click derecho sobre el archivo >> Encrypt >> Colocar clave y confirmar clave`
+
+Descifrar archivos
+
+`Abrir archivo cifrado >> colocar clave`
+
+Descifrar hashes
+
+`https://hashes.com/en/decrypt/hash`
+
+### VeraCrypt
+
+`Abrir aplicacion >> Create Volume >> `
+
+
+
 
