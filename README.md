@@ -84,9 +84,39 @@ Enumerar usuarios
 
 `nmap -p445 --script smb-enum-users --script-args smbusername=administrator,smbpassword=password IP`
 
+Enumerar grupos
+
+`nmap -p445 --script smb-enum-groups --script-args smbusername=administrator,smbpassword=password IP`
+
+Enumerar niveles de seguridad
+
+`nmap -sC -sV -A -T4 -p445 IP`
+
+Enumerar servicios del dominio o equipo
+`nmap -p445 --script smb-enum-services --script-args smbusername=administrator,smbpassword=password IP`
+
 #### Acceder a traves de interfaz grafica
 
 `smb://IP`
+
+### RDP
+
+#### Explotar servicio de RDP
+
+Confirmar puerto de RDP con mestasploit ya que puede estar usando un puerto diferente
+
+`use auxiliary/scanner/rdp/rdp_scanner`
+
+`set RHOST IP`
+
+`set RPORT PUERTO`
+
+`exploit`
+
+Realizar ataque de fuerza bruta con hydra
+
+``
+
 
 
 
