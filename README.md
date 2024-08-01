@@ -84,6 +84,8 @@ Enumerar usuarios
 
 `nmap -p445 --script smb-enum-users --script-args smbusername=administrator,smbpassword=password IP`
 
+`nmap -p445 --script smb-enum-users --script-args smbdomain=DOMAIN,smbusername=USER,smbpassword=PASSWORD IP -v`
+
 Enumerar grupos
 
 `nmap -p445 --script smb-enum-groups --script-args smbusername=administrator,smbpassword=password IP`
