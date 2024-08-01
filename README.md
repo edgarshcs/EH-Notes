@@ -115,7 +115,45 @@ Confirmar puerto de RDP con mestasploit ya que puede estar usando un puerto dife
 
 Realizar ataque de fuerza bruta con hydra
 
-``
+`hydra -l asus -P pass.txt rdp://192.168.100.55 -s 3389`
+
+Realizar conexion RDP
+
+`xfreerdp /u:USER /p:PASSWORD /v:IP:PORT`
+
+`xfreerdp /u:USER /p:PASSWORD /v:192.168.100.55:3389`
+
+### NETBIOS
+
+`nmap -sV --script nbstat.nse 192.168.100.55`
+
+## Traffic Sniffing
+
+### Filtros Wireshark
+
+`tcp.flags.sync==1`
+
+Filtrar paquetes http
+
+`http`
+
+Seguimiento de paquetes 
+
+`Seleccionar paquete >> Follow >> TCP Stream`
+
+Extraer archivos
+
+`File >> Export objects >> Service (HTTP,TCP,SMB)`
+
+Buscar Strings
+
+`Ctrl + F`
+
+`Colocar palabra a buscar`
+
+Denegacion de servicio
+
+`Statics >> Conversations >> Pestana IPV4 >> Ordenar por bytes`
 
 
 
